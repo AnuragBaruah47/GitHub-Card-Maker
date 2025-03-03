@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255)); */
+    font: 1em sans-serif;
+    height: 100vh;
+    width: 100vw;
+   justify-content: center;
+   align-items: center;
+    display: flex;
+}
+
+#name{
+    height: 20px;
+    width: 200px;
+    color: #000000;
+}
+.name{
+    color: #000000;
+}
+.forname{
+    color: #000000;
+}
+.forsex{
+    color: #000000;
+}
+.formale{
+    color: #000000;
+}
+.forfemale{
+    color: #000000;
+}
+.forage{
+    color: #000000;
+}
+.fordob{
+    color: #000000;
+}
+.forgithub{
+    color: #000000;
+}
+.forimg{
+    color: #000000;
+}
+h1{
+    color: #000000;
+}
+
+.submit{
+    height: 40px;
+    width: 100px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.reset{
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.smaincontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardcontainer{
+    height: 750px;
+    width: 510px;
+    border: 2px solid red;
+}
+.imgContainer{
+    border: 2px solid #000080;
+    position: relative;
+    display: flex;
+    background-color: #000080;
+    width: 510px;
+    height:90px;
+    justify-content: center;
+}
+.img1{
+    border: 2px solid #000080;
+    top: 10px;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 103px;
+}
+.nameContainer{
+    display: flex;
+    width: 510px;
+    height:110px;
+    position: relative;
+    justify-content: center;
+
+}
+.nameh1{
+    top: 60px;
+    position: absolute;
+}
+@media(min-width:375px){
+    .cardcontainer{
+        margin-left: 60px;
+        margin-right:  60px;
+    }
+}
+@media(max-width:375px){
+    .cardcontainer{
+        margin-left: 60px;
+        margin-right:  60px;
+    }
+}

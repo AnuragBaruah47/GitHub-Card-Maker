@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Maker</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <h1>Card Maker</h1>
+        <br>
+        <div class="namecontainer">
+          <label for="name" class="forname">Your GitHub UserName</label>
+          <input type="text" id="name" required/>
+        </div>
+        <br />
+        <div class="agecontainer">
+            <label for="Age" class="forage">Enter Your Age</label>
+            <input type="number" min="1" max="100" id="Age"/>
+        </div>
+        <br />
+        <div class="DOBcontainer">
+            <label for="DOB" class="fordob">Date Of Birth</label>
+            <input type="date" name="" id="DOB">
+        </div>
+
+        <br />
+        <div class="githubcontainer">
+            <label for="Github" class="forgithub">Your Git Hub Gmail</label>
+            <input type="email" id="Github" required/></div>
+        <br />
+        <div class="buttoncontainer">
+            <button type="submit" class="submit">SUBMIT</button>
+            <button type="reset" class="reset">RESET</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
