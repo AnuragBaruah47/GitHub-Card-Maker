@@ -1,8 +1,8 @@
 let mainContainer=document.querySelector(".container")
 let submitbutton = document.querySelector(".submit");
 let userNameInput = document.querySelector("#name");
-let ageInput = document.querySelector("#Age");
-let dobInput = document.querySelector("#DOB");
+// let ageInput = document.querySelector("#Age");
+// let dobInput = document.querySelector("#DOB");
 let gmailInput = document.querySelector("#Github");
 let form = document.querySelector(".form");
 let allData;
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mainContainer.innerHTML=""
     e.preventDefault();
     let userName = userNameInput.value;
-    let age = ageInput.value;
-    let dob = dobInput.value;
+    // let age = ageInput.value;
+    // let dob = dobInput.value;
     let gmail = gmailInput.value;
     let mainURL = `${baseURL}${userName}`;
     console.log(mainURL);
@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.log(error);
     }
-    let gitHubUserName=allData.login
-    console.log(gitHubUserName);
     let gitHubUserId=allData.id
     console.log(gitHubUserId);
+    let gitHubBio=allData.bio
+    console.log(gitHubBio);
     let gitHubName=allData.name
     console.log(gitHubName);
     let gitHubFollowers=allData.followers
@@ -59,6 +59,33 @@ document.addEventListener("DOMContentLoaded", () => {
     nameh1.classList.add("nameh1")
     nameh1.innerText=`${gitHubName}`
     nameContainer.appendChild(nameh1)
+    const bioContainer=document.createElement("div")
+    bioContainer.classList.add("bioContainer")
+    div2.appendChild(bioContainer)
+    const biop=document.createElement("textarea")
+    biop.readOnly="true"
+    biop.style.resize="none";
+    biop.maxLength="156"
+    biop.classList.add("biop")
+    biop.innerText=`${gitHubBio}`
+    bioContainer.appendChild(biop)
+    const follower_followingcontainer=document.createElement("div")
+    follower_followingcontainer.classList.add("follower_followingcontainer")
+    div2.appendChild(follower_followingcontainer)
+    const followersContainer=document.createElement("div")
+    followersContainer.classList.add("followersContainer")
+    follower_followingcontainer.appendChild(followersContainer)
+    const followersh1=document.createElement("h1")
+    followersh1.classList.add("followersh1")
+    followersh1.innerText=`Followers:${gitHubFollowers}`
+    followersContainer.appendChild(followersh1)
+    const followingsContainer=document.createElement("div")
+    followingsContainer.classList.add("followingsContainer")
+    follower_followingcontainer.appendChild(followingsContainer)
+    const followingsh1=document.createElement("h1")
+    followingsh1.classList.add("followingsh1")
+    followingsh1.innerText=`Followings:${gitHubFollowing}`
+    followingsContainer.appendChild(followingsh1)
   });
 });
 
