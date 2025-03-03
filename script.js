@@ -86,6 +86,27 @@ document.addEventListener("DOMContentLoaded", () => {
     followingsh1.classList.add("followingsh1")
     followingsh1.innerText=`Followings:${gitHubFollowing}`
     followingsContainer.appendChild(followingsh1)
+    const svgContainer=document.createElement("div")
+    svgContainer.classList.add("svgContainer")
+    div2.appendChild(svgContainer)
+    const linkdinsvgContainer=document.createElement("div")
+    linkdinsvgContainer.classList.add("linkdinsvgContainer")
+    const instagramsvgContainer=document.createElement("div")
+    instagramsvgContainer.classList.add("instagramsvgContainer")
+    const githubsvgContainer=document.createElement("div")
+    githubsvgContainer.classList.add("githubsvgContainer")
+    svgContainer.appendChild(linkdinsvgContainer)
+    svgContainer.appendChild(instagramsvgContainer)
+    svgContainer.appendChild(githubsvgContainer)
+    const linkdinsvg=document.createElement("img")
+    linkdinsvg.setAttribute("src","icons8-linkedin.svg")
+    const instagramsvg=document.createElement("img")
+    instagramsvg.setAttribute("src","icons8-instagram.svg")
+    const githubsvg=document.createElement("img")
+    githubsvg.setAttribute("src","icons8-github.svg")
+    linkdinsvgContainer.appendChild(linkdinsvg)
+    instagramsvgContainer.appendChild(instagramsvg)
+    githubsvgContainer.appendChild(githubsvg)
   });
 });
 
