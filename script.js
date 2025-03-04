@@ -5,6 +5,7 @@ let linkedinInput = document.querySelector("#linkedinusername");
 let instragramInput = document.querySelector("#instagramname");
 const mediaQuery = window.matchMedia("(max-width: 550px)")
 
+
 // let ageInput = document.querySelector("#Age");
 // let dobInput = document.querySelector("#DOB");
 let gmailInput = document.querySelector("#Github");
