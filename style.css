@@ -4,8 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
-    /* background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255)); */
+    background-image: linear-gradient(45deg, rgb(115, 255, 0), rgb(3, 66, 255));
     font-family: "Martel Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -15,40 +16,80 @@ body{
    align-items: center;
     display: flex;
 }
-
+#Github{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    color: #000000
+}
 #name{
-    height: 20px;
-    width: 200px;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    color: #000000;
+}
+#linkedinusername{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    color: #000000;
+}
+#instagramname{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
     color: #000000;
 }
 .name{
     color: #000000;
 }
+.forLinkedinname{
+    font-size: 30px;
+    font-weight: 100;
+    color: #000000;
+}
+.instagramnamecontainer{
+    font-size: 30px;
+    font-weight: 100;
+    color: #000000;
+}
 .forname{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .forsex{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .formale{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .forfemale{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .forage{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .fordob{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 .forgithub{
-    color: #000000;
-}
-.forimg{
+    font-size: 30px;
+    font-weight: 100;
     color: #000000;
 }
 h1{
+    font-size: 50px;
     color: #000000;
 }
 
@@ -74,16 +115,25 @@ h1{
     justify-content: center;
 }
 .cardcontainer{
+    margin-left: 30px;
+    margin-right: 30px;
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
     height: 750px;
     width: 510px;
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
 }
 .imgContainer{
-    border: 2px solid #000080;
+    border-radius: 5px;
+    border: 0.5px solid #000080;
     position: relative;
     display: flex;
     background-color: #000080;
-    width: 510px;
+    width: 508px;
     height:90px;
     justify-content: center;
 }
@@ -111,7 +161,7 @@ h1{
     display: flex;
     flex-direction: row;
     width: 510px;
-    height:80px;
+    height:50px;
 }
 .followersContainer{
     display:flex;
@@ -134,37 +184,93 @@ font-size: 24px;
     font-size: 24px;
 }
 .bioContainer{
-
     margin-top: 5px;
+    height: 168px;
+    width: 510px;
 }
 .biop{
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 150px;
-    width: 490px;
+    height: 168px;
+    width: 450px;
+    margin-left: 30px;
+    margin-right: 30px;
     border: 0px;
     font-size: 24px;
-}
-.svgContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 510px;
-    border: 2px solid black;
+    overflow: hidden;
 }
 .linkdinsvgContainer{
-    border: 2px solid black;
+    margin-left: 23px;
 }
-@media(min-width:375px){
-    .cardcontainer{
-        margin-left: 60px;
-        margin-right:  60px;
-    }
+.instagramsvgContainer{
+    margin-left: 23px;
 }
-@media(max-width:375px){
+.githubsvgContainer{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 510px;
+    margin-left: 23px;
+}
+.linkdinsvgContainer{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 510px;
+    margin-left: 23px;
+}
+.instagramsvgContainer{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 510px;
+    margin-left: 23px;
+}
+
+.githubh1{
+    margin-left: 10px;
+    font-size:25px;
+}
+.emailContainer{
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 510px;
+}
+.emailh1{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.ageSvgContainer{
+    height: 50px;
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+}
+.ageh1{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.svgAge{
+    margin-left: 24px;
+}
+.svgTimeContainer{
+    display: flex;
+    align-items: center;
+}
+.svgTime{
+    margin-top: 7px;
+    margin-left: 24px;
+}
+.svgh1{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+@media(max-width:646px){
     .cardcontainer{
-        margin-left: 60px;
-        margin-right:  60px;
+background-color: #FFFFFF;
     }
 }
